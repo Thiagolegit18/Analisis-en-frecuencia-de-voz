@@ -23,9 +23,20 @@ Este repositorio contiene un sistema de procesamiento de señales de audio, dise
    ```bash
    pip install numpy matplotlib soundfile
 
-🔧 Funcionamiento
-💻 Beamforming - Conceptos Clave
-El beamforming es una técnica que permite combinar señales provenientes de diferentes fuentes (micrófonos) con diferentes retardos, amplificando la señal deseada y reduciendo el ruido de fondo.
+## 🔧 Funcionamiento
+
+### 💻 Beamforming - Conceptos Clave
+El **beamforming** es una técnica que permite combinar señales provenientes de diferentes fuentes (micrófonos) con diferentes retardos. Su objetivo es **amplificar** la señal deseada mientras **reduce** el ruido de fondo o interferencias no deseadas.
+
+Se utiliza especialmente en sistemas de **procesamiento de audio** y **comunicaciones** para focalizar la captura de sonido desde una dirección específica, mejorando la claridad de la señal. El sistema ajusta los tiempos de retardo aplicados a cada señal en función de la distancia entre los micrófonos y la fuente de sonido, logrando una mayor **precisión espacial**.
+
+### 🛠️ Cómo Funciona
+1. **Captura de Audio**: Los micrófonos captan múltiples versiones de la misma señal de audio (por ejemplo, una conversación en una sala).
+2. **Cálculo de Retardos**: Dependiendo de la distancia entre los micrófonos y la fuente, la señal llega con un ligero desfase a cada uno de los micrófonos. Este desfase se corrige calculando los **retardos**.
+3. **Transformada de Fourier (FFT)**: Las señales de audio en el dominio del tiempo se convierten al **dominio de la frecuencia** utilizando la FFT.
+4. **Ajuste de Retardos en Frecuencia**: En el dominio de la frecuencia, se aplican retardos precisos a cada micrófono para alinear las señales.
+5. **Combinación de Señales**: Se promedian las señales ajustadas para obtener una única señal, la cual tiene un mejor **SNR** y menos ruido.
+6. **Transformada Inversa (IFFT)**: Finalmente, se aplica la **IFFT** para obtener la señal combinada en el dominio del tiempo, que es la versión mejorada de la señal original.
 
 ## 🧮 Fórmulas Importantes
 
