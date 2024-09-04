@@ -28,20 +28,28 @@ El script procesará las señales de audio y generará las gráficas, además de
 💻 Beamforming - Conceptos Clave
 El beamforming es una técnica que permite combinar señales provenientes de diferentes fuentes (micrófonos) con diferentes retardos, amplificando la señal deseada y reduciendo el ruido de fondo.
 
-🧮 Fórmulas Importantes
-Potencia de la Señal:
-La potencia de una señal x(n) se calcula con la fórmula:</br>
-![image](https://github.com/user-attachments/assets/469cbc91-d496-480f-96cf-6203e27ecb28)
+## 🧮 Fórmulas Importantes
+
+### Potencia de la Señal:
+La potencia de una señal \( x(n) \) se calcula con la fórmula:
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/469cbc91-d496-480f-96cf-6203e27ecb28" width="400">
+</div>
+
 Donde:
 
-𝑃𝑥: es la potencia.
+- \( P_x \) es la potencia.
+- \( x(n) \) es la señal en el instante \( n \).
+- \( N \) es el número total de muestras.
 
-x(n) es la señal en el instante.
+---
 
-N es el número total de muestras.
-
-Transformada Rápida de Fourier (FFT):
+### Transformada Rápida de Fourier (FFT):
 Para pasar una señal del dominio del tiempo al dominio de la frecuencia, se utiliza la FFT:
 
-</br![image](https://github.com/user-attachments/assets/bed3d240-8288-4c17-b333-34b90f550fc6)>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/bed3d240-8288-4c17-b333-34b90f550fc6" width="500">
+</div>
+
 
