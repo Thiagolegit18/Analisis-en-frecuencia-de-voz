@@ -2,85 +2,6 @@
 
 Este repositorio contiene un sistema de procesamiento de señales de audio, diseñado para implementar **beamforming** en el dominio de la frecuencia. Este método mejora la señal de audio mezclada con ruido. Utilizamos múltiples señales de entrada de audio (captadas por micrófonos) para reforzar la señal deseada y reducir el impacto del ruido mediante técnicas de transformación de Fourier.
 
-## 📂 Archivos en el Proyecto
-
-- `audio1.wav` - Primer archivo de audio de entrada.
-- `audio2.wav` - Segundo archivo de audio de entrada.
-- `ruido.wav` - Archivo de ruido que será sumado a los audios de entrada.
-- `audio_mezclado.wav` - Resultado de mezclar las señales de audio con el ruido.
-- `audio_beamformed.wav` - Archivo resultante tras aplicar beamforming.
-
-## 📊 Funcionalidades del Código
-- **Mezcla de Audio**: Las señales de audio (audio1 y audio2) se mezclan con ruido para simular una señal contaminada.
-- **Beamforming FFT**: Se aplica beamforming en el dominio de la frecuencia utilizando la Transformada Rápida de Fourier (FFT) para aislar la señal deseada.
-- **Cálculo de Potencia y SNR**: Se calculan las potencias y la relación señal/ruido (SNR) de cada señal antes y después de aplicar beamforming.
-- **Visualización**: Gráficas en escala semilogarítmica del espectro de frecuencia de las señales procesadas.
-
-## 🚀 Ejecución del Proyecto
-
-1. Coloca los archivos de audio en la carpeta `audios/` dentro del directorio raíz del proyecto.
-2. Asegúrate de tener instaladas las siguientes dependencias:
-   ```bash
-   pip install numpy matplotlib soundfile
-   
-## ⚙️ Configuración del Sistema
-
-## 🎤 Interfaz de Audio
-
-
-### Interfaz de Audio: Behringer UMC202HD
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/5d9ba424-a3c8-440a-93fe-ce6e960f4862" width="500">
-</div>
-
-### Micrófono 1: SM-8B Takstar
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/b8158f7a-d3c0-43a7-949d-895c40707105" width="500">
-</div>
-
-### Micrófono 2: Shure
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/7a0a38b7-1a2f-461d-9e25-141e2b9bfdb6" width="500">
-</div>
-
-
-### 📏 Distancias y Configuración
-
-- **Distancia entre micrófonos**: 2 metros
-
-- **Distancias entre las fuentes de sonido y micrófonos**:
-  - **Fuente 1 (Santiago Mora)**:
-    - Distancia a Micrófono 1: 3-4 metros
-    - Distancia a Micrófono 2: 2 metros
-
-  - **Fuente 2 (Laura Lopez)**:
-    - Distancia a Micrófono 1: 2 metros
-    - Distancia a Micrófono 2: 0.5 metro
-
-### 📝 Descripción de la Configuración
-
-La configuración del sistema está diseñada con rigurosidad y se detalla de la siguiente manera:
-
-- **Micrófonos**: Se utilizan dos micrófonos, un SM-8B Takstar y un micrófono Shure.
-- **Fuentes de Sonido**: Se han ubicado dos fuentes de sonido, cada una a diferentes distancias de los micrófonos para evaluar su impacto.
-- **Distancias**: Las distancias entre los micrófonos y las fuentes de sonido se han definido con precisión para permitir una evaluación efectiva del beamforming. Las distancias varían desde 0.5 metros hasta 4 metros, proporcionando un rango completo para el análisis de la señal.
-
-## 📊 Orientación Gráfica de Micrófonos y Fuentes
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/379a93ff-aa06-4735-a3db-19f142a16a99" width="500">
-</div>
-
-### Descripción de la Configuración
-
-La gráfica muestra la disposición de los micrófonos y fuentes de sonido en el entorno de prueba:
-
-- **Micrófono 1 (SM-8B Takstar)** y **Micrófono 2 (Shure)** están ubicados a distancias específicas de las fuentes.
-- **Fuente 1 (Santiago Mora)** y **Fuente 2 (Laura Lopez)** están situadas en distintas posiciones con respecto a los micrófonos.
-
-
-Esta configuración asegura que las pruebas y el procesamiento de las señales se realicen en condiciones controladas y bien definidas, permitiendo una evaluación precisa de la técnica de beamforming aplicada.
-
 ## 🔧 Funcionamiento
 
 ### 💻 Beamforming - Conceptos Clave
@@ -133,6 +54,127 @@ La relación señal/ruido SNR se calcula en dB como:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/457f5a19-12d1-4020-a981-3234372344a8" width="400">
 </div>
+## ⚙️ Configuración del Sistema
+
+## 🎤 Interfaz de Audio
+
+
+### Interfaz de Audio: Behringer UMC202HD
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5d9ba424-a3c8-440a-93fe-ce6e960f4862" width="500">
+</div>
+
+### Micrófono 1: SM-8B Takstar
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b8158f7a-d3c0-43a7-949d-895c40707105" width="500">
+</div>
+
+### Micrófono 2: Shure
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7a0a38b7-1a2f-461d-9e25-141e2b9bfdb6" width="500">
+</div>
+
+### 📏 Distancias y Configuración
+
+- **Distancia entre micrófonos**: 2 metros
+
+- **Distancias entre las fuentes de sonido y micrófonos**:
+  - **Fuente 1 (Santiago Mora)**:
+    - Distancia a Micrófono 1: 3-4 metros
+    - Distancia a Micrófono 2: 2 metros
+
+  - **Fuente 2 (Laura Lopez)**:
+    - Distancia a Micrófono 1: 2 metros
+    - Distancia a Micrófono 2: 0.5 metro
+
+### 📝 Descripción de la Configuración
+
+La configuración del sistema está diseñada con rigurosidad y se detalla de la siguiente manera:
+
+- **Micrófonos**: Se utilizan dos micrófonos, un SM-8B Takstar y un micrófono Shure.
+- **Fuentes de Sonido**: Se han ubicado dos fuentes de sonido, cada una a diferentes distancias de los micrófonos para evaluar su impacto.
+- **Distancias**: Las distancias entre los micrófonos y las fuentes de sonido se han definido con precisión para permitir una evaluación efectiva del beamforming. Las distancias varían desde 0.5 metros hasta 4 metros, proporcionando un rango completo para el análisis de la señal.
+
+## 📊 Orientación Gráfica de Micrófonos y Fuentes
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/379a93ff-aa06-4735-a3db-19f142a16a99" width="500">
+</div>
+
+### Descripción de la Configuración
+
+La gráfica muestra la disposición de los micrófonos y fuentes de sonido en el entorno de prueba:
+
+- **Micrófono 1 (SM-8B Takstar)** y **Micrófono 2 (Shure)** están ubicados a distancias específicas de las fuentes.
+- **Fuente 1 (Santiago Mora)** y **Fuente 2 (Laura Lopez)** están situadas en distintas posiciones con respecto a los micrófonos.
+
+
+Esta configuración asegura que las pruebas y el procesamiento de las señales se realicen en condiciones controladas y bien definidas, permitiendo una evaluación precisa de la técnica de beamforming aplicada.
+#### ## Dominio del Tiempo
+Se generan gráficos para visualizar las señales en el dominio del tiempo. Estos incluyen:
+- **Audio 1**: La señal original captada por el primer micrófono.
+- **Audio 2**: La señal original captada por el segundo micrófono.
+- **Audio Mezclado**: La señal resultante de la combinación de audio1, audio2 y ruido.
+- **Ruido**: La señal de ruido independiente.
+- **Señal Beamformed**: La señal mejorada tras aplicar el beamforming.
+
+Estas gráficas muestran la amplitud de las señales a lo largo del tiempo, permitiendo comparar la señal original, la mezclada con ruido y la procesada.
+
+#### ## Espectro de Frecuencia (FFT)
+Se generan gráficos en escala semilogarítmica para representar el espectro de frecuencia de cada señal:
+- **Audio 1**: El espectro de frecuencia de la primera señal.
+- **Audio 2**: El espectro de frecuencia de la segunda señal.
+- **Ruido**: El espectro de frecuencia del ruido.
+
+Estos gráficos permiten observar las diferencias en la amplitud de las frecuencias para cada señal, mostrando con claridad cómo el contenido frecuencial se ve afectado por el ruido y el procesamiento.
+
+## 📂 Archivos en el Proyecto
+
+- `audio1.wav` - Primer archivo de audio de entrada.
+- `audio2.wav` - Segundo archivo de audio de entrada.
+- `ruido.wav` - Archivo de ruido que será sumado a los audios de entrada.
+- `audio_mezclado.wav` - Resultado de mezclar las señales de audio con el ruido.
+- `audio_beamformed.wav` - Archivo resultante tras aplicar beamforming.
+
+## 📊 Funcionalidades del Código
+- **Mezcla de Audio**: Las señales de audio (audio1 y audio2) se mezclan con ruido para simular una señal contaminada.
+- **Beamforming FFT**: Se aplica beamforming en el dominio de la frecuencia utilizando la Transformada Rápida de Fourier (FFT) para aislar la señal deseada.
+- **Cálculo de Potencia y SNR**: Se calculan las potencias y la relación señal/ruido (SNR) de cada señal antes y después de aplicar beamforming.
+- **Visualización**: Gráficas en escala semilogarítmica del espectro de frecuencia de las señales procesadas.
+
+## 🚀 Ejecución del Proyecto
+
+1. Coloca los archivos de audio en la carpeta `audios/` dentro del directorio raíz del proyecto.
+2. Asegúrate de tener instaladas las siguientes dependencias:
+   ```bash
+   pip install numpy matplotlib soundfile
+
+
+### 💡 Mejora del SNR
+Tras aplicar el beamforming, se mide la mejora de la relación señal-ruido (SNR) para cada una de las señales procesadas.
+
+### Ejemplo de salida del código:
+```plaintext
+Potencia de audio1: 0.003391749316358627
+Potencia de audio2: 0.001645232435617203
+Potencia de ruido: 4.226501938593041e-06
+Potencia de audio mezclado: 0.005340377730770212
+Potencia de la señal aislada: 0.0013344059571859226
+SNR de audio1: 29.04 dB
+SNR de audio2: 25.90 dB
+SNR de audio mezclado: 31.02 dB
+SNR de la señal aislada: 24.99 dB
+
+```
+📈 Detalles Técnicos del Script
+1. Cálculo de Potencia
+El cálculo de la potencia de cada señal (audio1, audio2, ruido) se realiza mediante la función calcular_potencia().
+
+2. Transformada de Fourier (FFT)
+Se aplica la FFT para convertir las señales del dominio temporal al dominio frecuencial, lo cual es clave para el beamforming basado en frecuencias.
+
+3. Beamforming FFT
+La función beamforming_fft() aplica el beamforming en el dominio de la frecuencia, calculando retardos y combinando señales de diferentes micrófonos para mejorar la señal deseada.
 
 📊 Resultados
 🖼 Gráficas Generadas
@@ -152,55 +194,7 @@ En la siguiente imagén encontraremos las gráficas del espectro de frecuencias 
 
 ![espectro mezcla y aislada](https://github.com/user-attachments/assets/7904d6bd-9ef3-4ab5-8abf-32d23e363087)
 
-#### ## Dominio del Tiempo
-Se generan gráficos para visualizar las señales en el dominio del tiempo. Estos incluyen:
-- **Audio 1**: La señal original captada por el primer micrófono.
-- **Audio 2**: La señal original captada por el segundo micrófono.
-- **Audio Mezclado**: La señal resultante de la combinación de audio1, audio2 y ruido.
-- **Ruido**: La señal de ruido independiente.
-- **Señal Beamformed**: La señal mejorada tras aplicar el beamforming.
-
-Estas gráficas muestran la amplitud de las señales a lo largo del tiempo, permitiendo comparar la señal original, la mezclada con ruido y la procesada.
-
-#### ## Espectro de Frecuencia (FFT)
-Se generan gráficos en escala semilogarítmica para representar el espectro de frecuencia de cada señal:
-- **Audio 1**: El espectro de frecuencia de la primera señal.
-- **Audio 2**: El espectro de frecuencia de la segunda señal.
-- **Ruido**: El espectro de frecuencia del ruido.
-
-Estos gráficos permiten observar las diferencias en la amplitud de las frecuencias para cada señal, mostrando con claridad cómo el contenido frecuencial se ve afectado por el ruido y el procesamiento.
-
-#### ## Gráficos en Escala Semilogarítmica de las Señales y del Ruido
-Los gráficos del espectro de frecuencia se representan en escala semilogarítmica. Esto es especialmente útil para resaltar la amplitud de las distintas frecuencias y observar con mayor claridad las diferencias entre las señales procesadas y el ruido. La escala semilogarítmica facilita la visualización de componentes de frecuencia bajas y altas en la misma gráfica.
-
-
-
-### 💡 Mejora del SNR
-Tras aplicar el beamforming, se mide la mejora de la relación señal-ruido (SNR) para cada una de las señales procesadas.
-
-### Ejemplo de salida del código:
-```plaintext
-Potencia de audio1: 0.003391749316358627
-Potencia de audio2: 0.001645232435617203
-Potencia de ruido: 4.226501938593041e-06
-Potencia de audio mezclado: 0.005340377730770212
-Potencia de la señal aislada: 0.0013344059571859226
-SNR de audio1: 29.04 dB
-SNR de audio2: 25.90 dB
-SNR de audio mezclado: 31.02 dB
-SNR de la señal aislada: 24.99 dB
-
-```
-
 🎧 Salida de Audio
 El archivo audio_beamformed.wav es el resultado del proceso de beamforming, y presenta una mejora en la claridad de la señal en comparación con el audio mezclado.
 
-📈 Detalles Técnicos del Script
-1. Cálculo de Potencia
-El cálculo de la potencia de cada señal (audio1, audio2, ruido) se realiza mediante la función calcular_potencia().
 
-2. Transformada de Fourier (FFT)
-Se aplica la FFT para convertir las señales del dominio temporal al dominio frecuencial, lo cual es clave para el beamforming basado en frecuencias.
-
-3. Beamforming FFT
-La función beamforming_fft() aplica el beamforming en el dominio de la frecuencia, calculando retardos y combinando señales de diferentes micrófonos para mejorar la señal deseada.
