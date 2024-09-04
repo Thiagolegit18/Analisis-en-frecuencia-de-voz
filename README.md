@@ -27,22 +27,22 @@ Este repositorio contiene un sistema de procesamiento de señales de audio, dise
 
 ## 🎤 Interfaz de Audio
 
+
 ### Interfaz de Audio: Behringer UMC202HD
 <div align="center">
-  ![image](https://github.com/user-attachments/assets/2e967fd0-5fac-44de-a78c-fc56b8d5d8fe)
+  <img src="https://github.com/user-attachments/assets/5d9ba424-a3c8-440a-93fe-ce6e960f4862" width="500">
 </div>
 
 ### Micrófono 1: SM-8B Takstar
 <div align="center">
-  ![image](https://github.com/user-attachments/assets/ab4b510f-197c-4964-8c75-37622fd0de31)
-
+  <img src="https://github.com/user-attachments/assets/b8158f7a-d3c0-43a7-949d-895c40707105" width="500">
 </div>
 
 ### Micrófono 2: Shure
 <div align="center">
-  ![image](https://github.com/user-attachments/assets/ea5d65ca-e73c-4fa2-8a50-f9996571d3a6)
-
+  <img src="https://github.com/user-attachments/assets/7a0a38b7-1a2f-461d-9e25-141e2b9bfdb6" width="500">
 </div>
+
 
 ### 📏 Distancias y Configuración
 
