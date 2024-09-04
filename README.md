@@ -54,7 +54,8 @@ La relación señal/ruido SNR se calcula en dB como:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/457f5a19-12d1-4020-a981-3234372344a8" width="400">
 </div>
-## ⚙️ Configuración del Sistema
+
+### ⚙️ Configuración del Sistema
 
 ## 🎤 Interfaz de Audio
 
