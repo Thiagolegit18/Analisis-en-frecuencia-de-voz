@@ -128,7 +128,7 @@ El retardo aplicado a las señales captadas por micrófonos se calcula en funci�
 </div>
 
 ### Relación Señal/Ruido (SNR):
-La relación señal/ruido \( \text{SNR} \) se calcula en dB como:
+La relación señal/ruido SNR se calcula en dB como:
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/457f5a19-12d1-4020-a981-3234372344a8" width="400">
