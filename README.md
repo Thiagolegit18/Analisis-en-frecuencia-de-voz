@@ -65,10 +65,21 @@ La configuración del sistema está diseñada con rigurosidad y se detalla de la
 - **Fuentes de Sonido**: Se han ubicado dos fuentes de sonido, cada una a diferentes distancias de los micrófonos para evaluar su impacto.
 - **Distancias**: Las distancias entre los micrófonos y las fuentes de sonido se han definido con precisión para permitir una evaluación efectiva del beamforming. Las distancias varían desde 0.5 metros hasta 4 metros, proporcionando un rango completo para el análisis de la señal.
 
+## 📊 Orientación Gráfica de Micrófonos y Fuentes
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6eda7772-b6fa-49ae-b3f0-032e9527e3c9" width="500">
+</div>
+
+### Descripción de la Configuración
+
+La gráfica muestra la disposición de los micrófonos y fuentes de sonido en el entorno de prueba:
+
+- **Micrófono 1 (SM-8B Takstar)** y **Micrófono 2 (Shure)** están ubicados a distancias específicas de las fuentes.
+- **Fuente 1 (Santiago Mora)** y **Fuente 2 (Laura Lopez)** están situadas en distintas posiciones con respecto a los micrófonos.
+
+
 Esta configuración asegura que las pruebas y el procesamiento de las señales se realicen en condiciones controladas y bien definidas, permitiendo una evaluación precisa de la técnica de beamforming aplicada.
-
-
-
 
 ## 🔧 Funcionamiento
 
