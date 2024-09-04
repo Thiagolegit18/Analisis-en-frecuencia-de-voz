@@ -112,7 +112,7 @@ La gráfica muestra la disposición de los micrófonos y fuentes de sonido en el
 📊 Configuración del Sistema de Adquisición
 El sistema de adquisición de datos se describe con los siguientes criterios:
 
-Criterios de Digitalización
+## Criterios de Digitalización
 ## Frecuencia de Muestreo: 44,100 Hz
 Esta frecuencia de muestreo es estándar para la mayoría de las grabaciones de audio digital, proporcionando una resolución adecuada para capturar detalles en el rango auditivo.
 
