@@ -134,9 +134,23 @@ La relación señal/ruido SNR se calcula en dB como:
   <img src="https://github.com/user-attachments/assets/457f5a19-12d1-4020-a981-3234372344a8" width="400">
 </div>
 
-## 📊 Resultados
+📊 Resultados
+🖼 Gráficas Generadas
+## Dominio del Tiempo:
+Se generan gráficos para las señales originales, el ruido, la señal mezclada con ruido y la señal procesada con beamforming.
+![tiempo](https://github.com/user-attachments/assets/45385978-91c3-47aa-9caa-bc8db643435a)
 
-### 🖼 Gráficas Generadas
+
+## Espectro de Frecuencia (FFT):
+## Gráficos en escala semilogarítmica de las señales y del ruido
+
+Los gráficos de las señales y el ruido se representan en escala semilogarítmica para resaltar la amplitud de las distintas frecuencias. Esto permite observar con mayor claridad las diferencias en los espectros de cada señal procesada.
+A continuacón encontraremos las gráficas del espectro de frecuencias para la señal del audio 1, audio 2 y el ruido.
+![espectro](https://github.com/user-attachments/assets/d6604641-6126-4bbc-a0aa-b99788fa12a7)
+
+En la siguiente imagén encontraremos las gráficas del espectro de frecuencias para la señal mezclada y la señal final o aislada.
+
+![espectro mezcla y aislada](https://github.com/user-attachments/assets/7904d6bd-9ef3-4ab5-8abf-32d23e363087)
 
 #### ## Dominio del Tiempo
 Se generan gráficos para visualizar las señales en el dominio del tiempo. Estos incluyen:
