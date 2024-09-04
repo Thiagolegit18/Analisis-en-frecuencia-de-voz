@@ -194,7 +194,11 @@ En la siguiente imagén encontraremos las gráficas del espectro de frecuencias 
 
 ![espectro mezcla y aislada](https://github.com/user-attachments/assets/7904d6bd-9ef3-4ab5-8abf-32d23e363087)
 
-🎧 Salida de Audio
-El archivo audio_beamformed.wav es el resultado del proceso de beamforming, y presenta una mejora en la claridad de la señal en comparación con el audio mezclado.
+La señal mezclada y la señal aislada tienen un espectro muy similar pero magnitudes muy diferentes. La razón por la cual la magnitud de la señal aislada es menor (llegando a aproximadamente 800 en el gráfico) que la de la señal mezclada (que llega a 1750) tiene que ver con varios factores. Al aplicar beamforming, parte del ruido y otras señales fuera de la dirección focalizada se atenúan. Esto reduce la potencia total de la señal, lo que explica la disminución en la magnitud del espectro de frecuencia. En el proceso de beamforming, las fases de las señales se ajustan para que las señales provenientes de la dirección objetivo se sumen constructivamente, mientras que las señales que provienen de otras direcciones pueden sumarse destructivamente. Esto contribuye reducción en la magnitud total de la señal.
+Cuando las señales de los micrófonos están en fase después de aplicar el retardo adecuado (delays), las componentes de frecuencia se alinean correctamente, y la magnitud de la señal resultante será mayor. Este es el proceso de suma constructiva que refuerza la señal de interés.
+Pero cuando las señales de los micrófonos no están en fase correcta después de aplicar los retardos, entonces se cancelarán entre sí en ciertos puntos, reduciendo la magnitud de la señal resultante. Este es el proceso de suma destructiva.
+
+En cuanto al espectro de frecuencia las señales son muy similares pues la señal aislada sigue capturando las frecuencias dominantes de los audios originales (audio 1 y 2), ya que el beamforming está diseñado para resaltar las señales deseadas y reducir el ruido.
+Las frecuencias dominantes en los audios originales están presentes en ambas señales (mezclada y beamformed) porque el beamforming no elimina esas frecuencias, sino que las mantiene al intentar focalizarlas.
 
 
