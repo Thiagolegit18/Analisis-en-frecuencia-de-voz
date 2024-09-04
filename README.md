@@ -91,6 +91,7 @@ SNR de audio2: 11.67 dB
 SNR de audio mezclado: 9.32 dB
 SNR de la señal aislada: 15.21 dB
 
+```
 
 🎧 Salida de Audio
 El archivo audio_beamformed.wav es el resultado del proceso de beamforming, y presenta una mejora en la claridad de la señal en comparación con el audio mezclado.
