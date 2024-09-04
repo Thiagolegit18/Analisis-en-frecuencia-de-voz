@@ -227,6 +227,12 @@ Estos gráficos permiten observar las diferencias en la amplitud de las frecuenc
 Se generan gráficos para las señales originales, el ruido, la señal mezclada con ruido y la señal procesada con beamforming.
 ![tiempo](https://github.com/user-attachments/assets/45385978-91c3-47aa-9caa-bc8db643435a)
 
+El dominio del tiempo muestra cómo cambia la amplitud de la señal a lo largo del tiempo. Cada gráfico tiene en su eje horizontal el tiempo (segundos) y en el eje vertical la amplitud (voltios). Este tipo de análisis es útil para visualizar la dinámica de la señal: cómo crece, disminuye, se estabiliza o varía en términos de volumen y características temporales.
+En la señal azul y verde encontramos los audios 1 y 2 respectivamente, estos tiene varias fluctuaciones debido a que tiene contenido sonoro. La señal gris es el ruido que se caracteriza por una amplitud constante sin grandes variaciones a lo largo del tiempo. La señal morada es la mezcla se la señal del audio 1, 2 y ruido. Podemos observar un comportamiento más complejo, con picos más pronunciados al inicio y después cierta estabilización.
+La mezcla de los audios parece generar una señal más energética y densa, lo que es común cuando se suman señales de diferentes fuentes.
+Finalmente, la señal Beamformed que es la señal aislada, notamos que tiene ciertas similitudes con el Audio Mezclado, pero parece más limpia y más estructurada, lo cual indica que el proceso de beamforming ha eliminado parte del ruido y de las interferencias.
+La señal muestra amplitudes más moderadas y menos distorsión, lo que sugiere que la técnica ha mejorado la calidad de la señal al dirigirla hacia una fuente de sonido específica.
+
 #### Espectro de Frecuencia (FFT)
 Se generan gráficos en escala semilogarítmica para representar el espectro de frecuencia de cada señal:
 - **Audio 1**: El espectro de frecuencia de la primera señal.
@@ -239,6 +245,12 @@ Los gráficos de las señales y el ruido se representan en escala semilogarítmi
 A continuacón encontraremos las gráficas del espectro de frecuencias para la señal del audio 1, audio 2 y el ruido.
 ![espectro](https://github.com/user-attachments/assets/d6604641-6126-4bbc-a0aa-b99788fa12a7)
 
+La escala semilogarítmica en el eje es ideal para representar espectros de frecuencia porque distribuye las frecuencias de manera más equitativa. Con una escala semilogarítmica, tanto las bajas como las altas frecuencias son más visibles y comparables. Esto facilita identificar detalles importantes en todo el rango de frecuencias, como los picos dominantes, que serían menos perceptibles en las altas frecuencias usando una escala lineal.
+
+La escala semilogarítmica permite observar cómo se distribuye la energía en diferentes rangos de frecuencia. En las tres gráficas, se puede apreciar cómo la energía está concentrada en ciertos rangos de frecuencia, con un detalle importante en los picos a bajas y medias frecuencias, mientras que las altas frecuencias muestran una caída más suave y progresiva. 
+
+ Por ejemplo, los picos de los audios en las bajas y medias frecuencias son mucho más claros, mientras que el ruido presenta un espectro más distribuido. La escala semilogarítmica ayuda a visualizar estas diferencias de manera más equitativa, destacando tanto las frecuencias bajas como las altas en un solo gráfico.
+ 
 En la siguiente imagén encontraremos las gráficas del espectro de frecuencias para la señal mezclada y la señal final o aislada.
 
 ![espectro mezcla y aislada](https://github.com/user-attachments/assets/7904d6bd-9ef3-4ab5-8abf-32d23e363087)
