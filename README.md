@@ -71,9 +71,15 @@ La relación señal/ruido \( \text{SNR} \) se calcula en dB como:
 ## Dominio del Tiempo:
 Se generan gráficos para las señales originales, la señal mezclada con ruido y la señal procesada con beamforming.
 ## Espectro de Frecuencia (FFT):
-Gráficos en escala semilogarítmica de las señales y del ruido.
-💡 Mejora del SNR
-Tras aplicar beamforming, se mide la mejora de la relación señal-ruido (SNR) para cada una de las señales procesadas. Ejemplo de salida del código:
+## Gráficos en escala semilogarítmica de las señales y del ruido
+
+Los gráficos de las señales y el ruido se representan en escala semilogarítmica para resaltar la amplitud de las distintas frecuencias. Esto permite observar con mayor claridad las diferencias en los espectros de cada señal procesada.
+
+### 💡 Mejora del SNR
+Tras aplicar el beamforming, se mide la mejora de la relación señal-ruido (SNR) para cada una de las señales procesadas.
+
+### Ejemplo de salida del código:
+```plaintext
 Potencia de audio1: 0.0012
 Potencia de audio2: 0.0010
 Potencia de ruido: 0.0003
@@ -84,6 +90,7 @@ SNR de audio1: 12.33 dB
 SNR de audio2: 11.67 dB
 SNR de audio mezclado: 9.32 dB
 SNR de la señal aislada: 15.21 dB
+
 
 🎧 Salida de Audio
 El archivo audio_beamformed.wav es el resultado del proceso de beamforming, y presenta una mejora en la claridad de la señal en comparación con el audio mezclado.
