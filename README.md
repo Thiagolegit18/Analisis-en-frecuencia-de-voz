@@ -110,7 +110,7 @@ La gráfica muestra la disposición de los micrófonos y fuentes de sonido en el
 
 
 Esta configuración asegura que las pruebas y el procesamiento de las señales se realicen en condiciones controladas y bien definidas, permitiendo una evaluación precisa de la técnica de beamforming aplicada.
-#### ## Dominio del Tiempo
+#### Dominio del Tiempo
 Se generan gráficos para visualizar las señales en el dominio del tiempo. Estos incluyen:
 - **Audio 1**: La señal original captada por el primer micrófono.
 - **Audio 2**: La señal original captada por el segundo micrófono.
@@ -120,7 +120,7 @@ Se generan gráficos para visualizar las señales en el dominio del tiempo. Esto
 
 Estas gráficas muestran la amplitud de las señales a lo largo del tiempo, permitiendo comparar la señal original, la mezclada con ruido y la procesada.
 
-#### ## Espectro de Frecuencia (FFT)
+#### Espectro de Frecuencia (FFT)
 Se generan gráficos en escala semilogarítmica para representar el espectro de frecuencia de cada señal:
 - **Audio 1**: El espectro de frecuencia de la primera señal.
 - **Audio 2**: El espectro de frecuencia de la segunda señal.
