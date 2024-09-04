@@ -32,4 +32,16 @@ El beamforming es una técnica que permite combinar señales provenientes de dif
 Potencia de la Señal:
 La potencia de una señal x(n) se calcula con la fórmula:</br>
 ![image](https://github.com/user-attachments/assets/469cbc91-d496-480f-96cf-6203e27ecb28)
+Donde:
+
+𝑃𝑥: es la potencia.
+
+x(n) es la señal en el instante.
+
+N es el número total de muestras.
+
+Transformada Rápida de Fourier (FFT):
+Para pasar una señal del dominio del tiempo al dominio de la frecuencia, se utiliza la FFT:
+
+</br![image](https://github.com/user-attachments/assets/bed3d240-8288-4c17-b333-34b90f550fc6)>
 
