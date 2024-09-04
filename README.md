@@ -52,4 +52,18 @@ Para pasar una señal del dominio del tiempo al dominio de la frecuencia, se uti
   <img src="https://github.com/user-attachments/assets/bed3d240-8288-4c17-b333-34b90f550fc6" width="500">
 </div>
 
+### Beamforming (Retardo de la Señal):
+El retardo aplicado a las señales captadas por micrófonos se calcula en función de la distancia \( d \) entre ellos y la velocidad del sonido \( v \):
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/4fb54c1e-8170-474b-a2ab-9179cabf4c27" width="400">
+</div>
+
+### Relación Señal/Ruido (SNR):
+La relación señal/ruido \( \text{SNR} \) se calcula en dB como:
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/457f5a19-12d1-4020-a981-3234372344a8" width="400">
+</div>
+
 
