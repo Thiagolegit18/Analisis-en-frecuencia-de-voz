@@ -22,8 +22,42 @@ Este repositorio contiene un sistema de procesamiento de señales de audio, dise
 2. Asegúrate de tener instaladas las siguientes dependencias:
    ```bash
    pip install numpy matplotlib soundfile
-interfaz de audio 
- ![image](https://github.com/user-attachments/assets/5d9ba424-a3c8-440a-93fe-ce6e960f4862)
+   
+## ⚙️ Configuración del Sistema
+
+### 🎤 Interfaz de Audio
+- **Interfaz behringer umc202hd**
+  
+- **Micrófono 1: SM-8B Takstar**
+  ![SM-8B Takstar](https://github.com/user-attachments/assets/5d9ba424-a3c8-440a-93fe-ce6e960f4862)
+  
+- **Micrófono 2: Shure**
+  ![Shure Microphone](https://github.com/user-attachments/assets/b8158f7a-d3c0-43a7-949d-895c40707105)
+
+### 📏 Distancias y Configuración
+
+- **Distancia entre micrófonos**: 2 metros
+
+- **Distancias entre las fuentes de sonido y micrófonos**:
+  - **Fuente 1 (Santiago Mora)**:
+    - Distancia a Micrófono 1: 3-4 metros
+    - Distancia a Micrófono 2: 2 metros
+
+  - **Fuente 2 (Laura Lopez)**:
+    - Distancia a Micrófono 1: 2 metros
+    - Distancia a Micrófono 2: 0.5 metro
+
+### 📝 Descripción de la Configuración
+
+La configuración del sistema está diseñada con rigurosidad y se detalla de la siguiente manera:
+
+- **Micrófonos**: Se utilizan dos micrófonos, un SM-8B Takstar y un micrófono Shure.
+- **Fuentes de Sonido**: Se han ubicado dos fuentes de sonido, cada una a diferentes distancias de los micrófonos para evaluar su impacto.
+- **Distancias**: Las distancias entre los micrófonos y las fuentes de sonido se han definido con precisión para permitir una evaluación efectiva del beamforming. Las distancias varían desde 0.5 metros hasta 4 metros, proporcionando un rango completo para el análisis de la señal.
+
+Esta configuración asegura que las pruebas y el procesamiento de las señales se realicen en condiciones controladas y bien definidas, permitiendo una evaluación precisa de la técnica de beamforming aplicada.
+
+
 
 
 ## 🔧 Funcionamiento
