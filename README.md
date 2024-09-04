@@ -1,29 +1,28 @@
-# Analisis-en-frecuencia-de-voz
-🟢 Beamforming en el Dominio de la Frecuencia 🎧
-Este repositorio contiene un sistema de procesamiento de señales de audio, diseñado para implementar beamforming en el dominio de la frecuencia, que mejora la señal de audio mezclada con ruido. Utilizamos múltiples señales de entrada de audio (captadas por micrófonos) para reforzar la señal deseada y reducir el impacto del ruido mediante técnicas de transformación de Fourier.
-📂 Archivos en el Proyecto
-audio1.wav - Primer archivo de audio de entrada.
-audio2.wav - Segundo archivo de audio de entrada.
-ruido.wav - Archivo de ruido que será sumado a los audios de entrada.
-audio_mezclado.wav - Resultado de mezclar las señales de audio con el ruido.
-audio_beamformed.wav - Archivo resultante tras aplicar beamforming.
-🚀 Instalación y Configuración
-Requisitos Previos
-Asegúrate de tener Python instalado. Instala las dependencias necesarias ejecutando el siguiente comando:
-pip install numpy soundfile matplotlib
-## Estructura del Proyecto
-.
-├── audios/
-│   ├── audio1.wav
-│   ├── audio2.wav
-│   ├── ruido.wav
-├── beamforming.py
-├── README.md
-## Ejecución del Código
-Coloca los archivos de audio (audio1.wav, audio2.wav, ruido.wav) en la carpeta audios/.
-Ejecuta el archivo beamforming.py desde la terminal:
-python beamforming.py
-El script procesará las señales de audio y generará las gráficas, además de almacenar el archivo audio_beamformed.wav con la señal aislada mediante beamforming.
+# 🟢 Beamforming en el Dominio de la Frecuencia 🎧
+
+Este repositorio contiene un sistema de procesamiento de señales de audio, diseñado para implementar **beamforming** en el dominio de la frecuencia. Este método mejora la señal de audio mezclada con ruido. Utilizamos múltiples señales de entrada de audio (captadas por micrófonos) para reforzar la señal deseada y reducir el impacto del ruido mediante técnicas de transformación de Fourier.
+
+## 📂 Archivos en el Proyecto
+
+- `audio1.wav` - Primer archivo de audio de entrada.
+- `audio2.wav` - Segundo archivo de audio de entrada.
+- `ruido.wav` - Archivo de ruido que será sumado a los audios de entrada.
+- `audio_mezclado.wav` - Resultado de mezclar las señales de audio con el ruido.
+- `audio_beamformed.wav` - Archivo resultante tras aplicar beamforming.
+
+## 📊 Funcionalidades del Código
+- **Mezcla de Audio**: Las señales de audio (audio1 y audio2) se mezclan con ruido para simular una señal contaminada.
+- **Beamforming FFT**: Se aplica beamforming en el dominio de la frecuencia utilizando la Transformada Rápida de Fourier (FFT) para aislar la señal deseada.
+- **Cálculo de Potencia y SNR**: Se calculan las potencias y la relación señal/ruido (SNR) de cada señal antes y después de aplicar beamforming.
+- **Visualización**: Gráficas en escala semilogarítmica del espectro de frecuencia de las señales procesadas.
+
+## 🚀 Ejecución del Proyecto
+
+1. Coloca los archivos de audio en la carpeta `audios/` dentro del directorio raíz del proyecto.
+2. Asegúrate de tener instaladas las siguientes dependencias:
+   ```bash
+   pip install numpy matplotlib soundfile
+
 🔧 Funcionamiento
 💻 Beamforming - Conceptos Clave
 El beamforming es una técnica que permite combinar señales provenientes de diferentes fuentes (micrófonos) con diferentes retardos, amplificando la señal deseada y reduciendo el ruido de fondo.
