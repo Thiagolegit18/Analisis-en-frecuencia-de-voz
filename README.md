@@ -30,6 +30,6 @@ El beamforming es una técnica que permite combinar señales provenientes de dif
 
 🧮 Fórmulas Importantes
 Potencia de la Señal:
-La potencia de una señal x(n) se calcula con la fórmula:
+La potencia de una señal x(n) se calcula con la fórmula:</br>
 ![image](https://github.com/user-attachments/assets/469cbc91-d496-480f-96cf-6203e27ecb28)
 
