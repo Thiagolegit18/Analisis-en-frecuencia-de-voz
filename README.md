@@ -122,9 +122,6 @@ El tiempo de captura define la duración de la grabación. Se ha establecido un 
 ## Número de Canales: Mono (1 canal)
 El audio se ha grabado en formato mono, utilizando un único canal de audio.
 
-## Profundidad de Bit: 16 bits
-La profundidad de bit de 16 bits proporciona una calidad de audio adecuada para la mayoría de las aplicaciones.
-
 ## Grabación en Audacity
 Los audios fueron grabados utilizando Audacity, una aplicación de edición de audio de código abierto. Esta herramienta permitió capturar las señales de los micrófonos en formato mono con los parámetros especificados, asegurando una grabación de alta calidad para el análisis posterior.
 
@@ -166,6 +163,40 @@ SNR de audio mezclado: 31.02 dB
 SNR de la señal aislada: 24.99 dB
 
 ```
+## 📊 Análisis de Potencia y Relación Señal-Ruido (SNR)
+
+### Potencia de las Señales
+
+- **Potencia de audio1**: `0.00339`
+  - La potencia de la señal `audio1` es relativamente alta comparada con las otras señales. Esto indica que `audio1` tiene una amplitud significativa en comparación con las otras señales.
+
+- **Potencia de audio2**: `0.00165`
+  - La potencia de la señal `audio2` es menor que la de `audio1`, lo que sugiere que `audio2` tiene una menor amplitud en comparación con `audio1`. Esto puede ser debido a diferencias en la distancia o la sensibilidad del micrófono.
+
+- **Potencia de ruido**: `4.23 × 10⁻⁶`
+  - La potencia del ruido es considerablemente baja en comparación con las señales de audio. Esto es esperado, ya que el ruido debe tener menos impacto en la señal final en comparación con las señales de audio principales.
+
+- **Potencia de audio mezclado**: `0.00534`
+  - La potencia de la señal mezclada, que es la combinación de `audio1`, `audio2`, y el ruido, es la mayor entre las medidas. Esto se debe a que la mezcla incluye tanto las señales de audio como el ruido, lo que incrementa la potencia total.
+
+- **Potencia de la señal aislada**: `0.00133`
+  - La potencia de la señal aislada, que es el resultado del beamforming, es menor que la de la señal mezclada pero similar a la de `audio2`. Esto sugiere que el beamforming ha logrado reducir la potencia general al eliminar componentes no deseados, pero aún conserva una parte significativa de la señal deseada.
+
+### Relación Señal-Ruido (SNR)
+
+- **SNR de audio1**: `29.04 dB`
+  - Un SNR de `29.04 dB` para `audio1` indica una buena calidad de señal con un ruido relativamente bajo en comparación con la señal de audio. Este valor sugiere que la señal de `audio1` es clara y con un buen nivel de detalle.
+
+- **SNR de audio2**: `25.90 dB`
+  - El SNR de `25.90 dB` para `audio2` es algo menor que el de `audio1`, lo que puede indicar que hay un poco más de ruido en `audio2` o que la señal no es tan fuerte como en `audio1`.
+
+- **SNR de audio mezclado**: `31.02 dB`
+  - El SNR de `31.02 dB` para la señal mezclada es el más alto de todos, lo cual es inusual y puede ser resultado de la combinación específica de las señales de audio y el ruido. Normalmente, el SNR aumenta al combinar varias señales si el ruido es constante o se reduce eficientemente.
+
+- **SNR de la señal aislada**: `24.99 dB`
+  - El SNR de la señal aislada es el más bajo entre las medidas, lo cual indica que, aunque el beamforming ha reducido el ruido, la señal final aún tiene una cantidad notable de ruido residual. Esto puede ser una indicación de que el beamforming no eliminó todo el ruido presente en la señal.
+
+
 📈 Detalles Técnicos del Script
 1. Cálculo de Potencia
 El cálculo de la potencia de cada señal (audio1, audio2, ruido) se realiza mediante la función calcular_potencia().
