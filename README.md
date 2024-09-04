@@ -68,7 +68,7 @@ La configuración del sistema está diseñada con rigurosidad y se detalla de la
 ## 📊 Orientación Gráfica de Micrófonos y Fuentes
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/6eda7772-b6fa-49ae-b3f0-032e9527e3c9" width="500">
+  <img src="https://github.com/user-attachments/assets/379a93ff-aa06-4735-a3db-19f142a16a99" width="500">
 </div>
 
 ### Descripción de la Configuración
