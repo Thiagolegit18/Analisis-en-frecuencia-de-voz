@@ -180,16 +180,15 @@ Tras aplicar el beamforming, se mide la mejora de la relación señal-ruido (SNR
 
 ### Ejemplo de salida del código:
 ```plaintext
-Potencia de audio1: 0.0012
-Potencia de audio2: 0.0010
-Potencia de ruido: 0.0003
-Potencia de audio mezclado: 0.0035
-Potencia de la señal aislada: 0.0021
-
-SNR de audio1: 12.33 dB
-SNR de audio2: 11.67 dB
-SNR de audio mezclado: 9.32 dB
-SNR de la señal aislada: 15.21 dB
+Potencia de audio1: 0.003391749316358627
+Potencia de audio2: 0.001645232435617203
+Potencia de ruido: 4.226501938593041e-06
+Potencia de audio mezclado: 0.005340377730770212
+Potencia de la señal aislada: 0.0013344059571859226
+SNR de audio1: 29.04 dB
+SNR de audio2: 25.90 dB
+SNR de audio mezclado: 31.02 dB
+SNR de la señal aislada: 24.99 dB
 
 ```
 
