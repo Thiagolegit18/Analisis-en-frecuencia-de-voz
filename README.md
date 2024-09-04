@@ -66,4 +66,34 @@ La relación señal/ruido \( \text{SNR} \) se calcula en dB como:
   <img src="https://github.com/user-attachments/assets/457f5a19-12d1-4020-a981-3234372344a8" width="400">
 </div>
 
+📊 Resultados
+🖼 Gráficas Generadas
+## Dominio del Tiempo:
+Se generan gráficos para las señales originales, la señal mezclada con ruido y la señal procesada con beamforming.
+## Espectro de Frecuencia (FFT):
+Gráficos en escala semilogarítmica de las señales y del ruido.
+💡 Mejora del SNR
+Tras aplicar beamforming, se mide la mejora de la relación señal-ruido (SNR) para cada una de las señales procesadas. Ejemplo de salida del código:
+Potencia de audio1: 0.0012
+Potencia de audio2: 0.0010
+Potencia de ruido: 0.0003
+Potencia de audio mezclado: 0.0035
+Potencia de la señal aislada: 0.0021
 
+SNR de audio1: 12.33 dB
+SNR de audio2: 11.67 dB
+SNR de audio mezclado: 9.32 dB
+SNR de la señal aislada: 15.21 dB
+
+🎧 Salida de Audio
+El archivo audio_beamformed.wav es el resultado del proceso de beamforming, y presenta una mejora en la claridad de la señal en comparación con el audio mezclado.
+
+📈 Detalles Técnicos del Script
+1. Cálculo de Potencia
+El cálculo de la potencia de cada señal (audio1, audio2, ruido) se realiza mediante la función calcular_potencia().
+
+2. Transformada de Fourier (FFT)
+Se aplica la FFT para convertir las señales del dominio temporal al dominio frecuencial, lo cual es clave para el beamforming basado en frecuencias.
+
+3. Beamforming FFT
+La función beamforming_fft() aplica el beamforming en el dominio de la frecuencia, calculando retardos y combinando señales de diferentes micrófonos para mejorar la señal deseada.
