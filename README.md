@@ -109,25 +109,24 @@ La gráfica muestra la disposición de los micrófonos y fuentes de sonido en el
 - **Micrófono 1 (SM-8B Takstar)** y **Micrófono 2 (Shure)** están ubicados a distancias específicas de las fuentes.
 - **Fuente 1 (Santiago Mora)** y **Fuente 2 (Laura Lopez)** están situadas en distintas posiciones con respecto a los micrófonos.
 
+📊 Configuración del Sistema de Adquisición
+El sistema de adquisición de datos se describe con los siguientes criterios:
 
-Esta configuración asegura que las pruebas y el procesamiento de las señales se realicen en condiciones controladas y bien definidas, permitiendo una evaluación precisa de la técnica de beamforming aplicada.
-#### Dominio del Tiempo
-Se generan gráficos para visualizar las señales en el dominio del tiempo. Estos incluyen:
-- **Audio 1**: La señal original captada por el primer micrófono.
-- **Audio 2**: La señal original captada por el segundo micrófono.
-- **Audio Mezclado**: La señal resultante de la combinación de audio1, audio2 y ruido.
-- **Ruido**: La señal de ruido independiente.
-- **Señal Beamformed**: La señal mejorada tras aplicar el beamforming.
+Criterios de Digitalización
+## Frecuencia de Muestreo: 44,100 Hz
+Esta frecuencia de muestreo es estándar para la mayoría de las grabaciones de audio digital, proporcionando una resolución adecuada para capturar detalles en el rango auditivo.
 
-Estas gráficas muestran la amplitud de las señales a lo largo del tiempo, permitiendo comparar la señal original, la mezclada con ruido y la procesada.
+## Tiempo de Captura: 10 segundos
+El tiempo de captura define la duración de la grabación. Se ha establecido un periodo de 10 segundos para asegurar que se capturen suficientes datos para el análisis.
 
-#### Espectro de Frecuencia (FFT)
-Se generan gráficos en escala semilogarítmica para representar el espectro de frecuencia de cada señal:
-- **Audio 1**: El espectro de frecuencia de la primera señal.
-- **Audio 2**: El espectro de frecuencia de la segunda señal.
-- **Ruido**: El espectro de frecuencia del ruido.
+## Número de Canales: Mono (1 canal)
+El audio se ha grabado en formato mono, utilizando un único canal de audio.
 
-Estos gráficos permiten observar las diferencias en la amplitud de las frecuencias para cada señal, mostrando con claridad cómo el contenido frecuencial se ve afectado por el ruido y el procesamiento.
+## Profundidad de Bit: 16 bits
+La profundidad de bit de 16 bits proporciona una calidad de audio adecuada para la mayoría de las aplicaciones.
+
+## Grabación en Audacity
+Los audios fueron grabados utilizando Audacity, una aplicación de edición de audio de código abierto. Esta herramienta permitió capturar las señales de los micrófonos en formato mono con los parámetros especificados, asegurando una grabación de alta calidad para el análisis posterior.
 
 ## 📂 Archivos en el Proyecto
 
@@ -179,12 +178,30 @@ La función beamforming_fft() aplica el beamforming en el dominio de la frecuenc
 
 📊 Resultados
 🖼 Gráficas Generadas
-## Dominio del Tiempo:
+
+## Dominio del Tiempo
+
+Se generan gráficos para visualizar las señales en el dominio del tiempo. Estos incluyen:
+- **Audio 1**: La señal original captada por el primer micrófono.
+- **Audio 2**: La señal original captada por el segundo micrófono.
+- **Audio Mezclado**: La señal resultante de la combinación de audio1, audio2 y ruido.
+- **Ruido**: La señal de ruido independiente.
+- **Señal Beamformed**: La señal mejorada tras aplicar el beamforming.
+
+Estas gráficas muestran la amplitud de las señales a lo largo del tiempo, permitiendo comparar la señal original, la mezclada con ruido y la procesada.
+
+
+
+Estos gráficos permiten observar las diferencias en la amplitud de las frecuencias para cada señal, mostrando con claridad cómo el contenido frecuencial se ve afectado por el ruido y el procesamiento.
 Se generan gráficos para las señales originales, el ruido, la señal mezclada con ruido y la señal procesada con beamforming.
 ![tiempo](https://github.com/user-attachments/assets/45385978-91c3-47aa-9caa-bc8db643435a)
 
+#### Espectro de Frecuencia (FFT)
+Se generan gráficos en escala semilogarítmica para representar el espectro de frecuencia de cada señal:
+- **Audio 1**: El espectro de frecuencia de la primera señal.
+- **Audio 2**: El espectro de frecuencia de la segunda señal.
+- **Ruido**: El espectro de frecuencia del ruido.
 
-## Espectro de Frecuencia (FFT):
 ## Gráficos en escala semilogarítmica de las señales y del ruido
 
 Los gráficos de las señales y el ruido se representan en escala semilogarítmica para resaltar la amplitud de las distintas frecuencias. Esto permite observar con mayor claridad las diferencias en los espectros de cada señal procesada.
