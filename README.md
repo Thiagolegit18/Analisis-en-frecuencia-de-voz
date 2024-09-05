@@ -142,7 +142,7 @@ Los audios fueron grabados utilizando Audacity, una aplicación de edición de a
 ## 🚀 Ejecución del Proyecto
 
 1. Coloca los archivos de audio en la carpeta `audios/` dentro del directorio raíz del proyecto.
-2. Asegúrate de tener instaladas las siguientes dependencias:
+2. Asegúrate de tener instaladas las siguientes librerias:
    ```bash
    pip install numpy matplotlib soundfile
 
@@ -188,23 +188,22 @@ SNR de la señal aislada: 24.99 dB
   - Un SNR de `29.04 dB` para `audio1` indica una buena calidad de señal con un ruido relativamente bajo en comparación con la señal de audio. Este valor sugiere que la señal de `audio1` es clara y con un buen nivel de detalle.
 
 - **SNR de audio2**: `25.90 dB`
-  - El SNR de `25.90 dB` para `audio2` es algo menor que el de `audio1`, lo que puede indicar que hay un poco más de ruido en `audio2` o que la señal no es tan fuerte como en `audio1`.
-
+  - El SNR de `25.90 dB` para `audio2` es algo menor que el de `audio1`, lo que puede indicar que hay un poco más de ruido en `audio2`
 - **SNR de audio mezclado**: `31.02 dB`
-  - El SNR de `31.02 dB` para la señal mezclada es el más alto de todos, lo cual es inusual y puede ser resultado de la combinación específica de las señales de audio y el ruido. Normalmente, el SNR aumenta al combinar varias señales si el ruido es constante o se reduce eficientemente.
+  - El SNR de `31.02 dB` para la señal mezclada es el más alto de todos, y puede ser resultado de la combinación específica de las señales de audio y el ruido. Normalmente, el SNR aumenta al combinar varias señales.
 
 - **SNR de la señal aislada**: `24.99 dB`
   - El SNR de la señal aislada es el más bajo entre las medidas, lo cual indica que, aunque el beamforming ha reducido el ruido, la señal final aún tiene una cantidad notable de ruido residual. Esto puede ser una indicación de que el beamforming no eliminó todo el ruido presente en la señal.
 
 
 📈 Detalles Técnicos del Script
-1. Cálculo de Potencia
+1. Cálculo de Potencia:
 El cálculo de la potencia de cada señal (audio1, audio2, ruido) se realiza mediante la función calcular_potencia().
 
-2. Transformada de Fourier (FFT)
+2. Transformada de Fourier (FFT):
 Se aplica la FFT para convertir las señales del dominio temporal al dominio frecuencial, lo cual es clave para el beamforming basado en frecuencias.
 
-3. Beamforming FFT
+3. Beamforming FFT:
 La función beamforming_fft() aplica el beamforming en el dominio de la frecuencia, calculando retardos y combinando señales de diferentes micrófonos para mejorar la señal deseada.
 
 📊 Resultados
