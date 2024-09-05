@@ -1,6 +1,6 @@
 # 🟢 Beamforming en el Dominio de la Frecuencia 🎧
 
-Este repositorio contiene un sistema de procesamiento de señales de audio, diseñado para implementar **beamforming** en el dominio de la frecuencia. Este método mejora la señal de audio mezclada con ruido. Utilizamos múltiples señales de entrada de audio (captadas por micrófonos) para reforzar la señal deseada y reducir el impacto del ruido mediante técnicas de transformación de Fourier.
+Este repositorio contiene un sistema de procesamiento de señales de audio, diseñado para implementar **beamforming** en el dominio de la frecuencia. Este método mejora la señal de audio mezclada con ruido. Utilizamos múltiples señales de entrada de audio para reforzar la señal deseada y reducir el impacto del ruido mediante técnicas de transformación de Fourier.
 
 ## 🔧 Funcionamiento
 
