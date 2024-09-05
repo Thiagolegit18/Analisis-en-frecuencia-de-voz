@@ -216,7 +216,7 @@ Se generan gráficos para visualizar las señales en el dominio del tiempo. Esto
 - **Audio 2**: La señal original captada por el segundo micrófono.
 - **Audio Mezclado**: La señal resultante de la combinación de audio1, audio2 y ruido.
 - **Ruido**: La señal de ruido independiente.
-- **Señal Beamformed**: La señal mejorada tras aplicar el beamforming.
+- **Señal Beamformed**: La señal aislada tras aplicar el beamforming.
 
 Estas gráficas muestran la amplitud de las señales a lo largo del tiempo, permitiendo comparar la señal original, la mezclada con ruido y la procesada.
 
