@@ -229,8 +229,11 @@ Se generan gráficos para las señales originales, el ruido, la señal mezclada 
 El dominio del tiempo muestra cómo cambia la amplitud de la señal a lo largo del tiempo. Cada gráfico tiene en su eje horizontal el tiempo (segundos) y en el eje vertical la amplitud (voltios). El análisis de estas gráficas en el dominio del tiempo es útil para visualizar la dinámica de la señal: cómo crece, disminuye, se estabiliza o varía en términos de volumen y características temporales.
 
 En la señal azul y verde encontramos los audios 1 y 2 respectivamente, estos tiene varias fluctuaciones debido a que tiene contenido sonoro. 
+
 La señal gris es el ruido que se caracteriza por una amplitud constante sin grandes variaciones a lo largo del tiempo. 
+
 La señal morada es la mezcla se la señal del audio 1, 2 y ruido, podemos observar un comportamiento más complejo, con picos más pronunciados al inicio y después cierta estabilización.
+
 La mezcla de los audios parece generar una señal más energética y densa, lo que es común cuando se suman señales de diferentes fuentes.
 
 Finalmente, la señal Beamformed que es la señal aislada, notamos que tiene ciertas similitudes con el Audio Mezclado, pero parece más limpia y más estructurada, lo cual indica que el proceso de beamforming ha eliminado parte del ruido y de las interferencias.
